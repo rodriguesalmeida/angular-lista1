@@ -1,0 +1,35 @@
+.container {
+    width: 80%;
+    margin: auto;
+    left: 0;
+    right: 0;
+    background: yellowgreen;
+    h1 {
+        text-align: center;
+        color: blue;
+    }
+}
+.exerc1{
+    background: red;
+    .label {
+        width: 250px;
+        line-height: 30px;
+        text-align: right;
+        margin-right: 8px;
+    }
+    input {
+        width: 120px;
+    }
+    margin: 25px;
+    padding: 10px;
+    border-style: double;
+    border-radius: 15px;
+    .linha {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 6px;
+    }
+    .alignleft{
+        text-align: right;
+    }
+}

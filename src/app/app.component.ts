@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'lista1';
+  gasto:number;
+  distancia:number = 0;
+  resultado:number = 0;
+
+  public calcular(){
+    this.resultado = this.distancia / this.gasto; 
+  }
 }
