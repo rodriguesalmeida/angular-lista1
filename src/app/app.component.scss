@@ -1,6 +1,7 @@
 .container {
     width: 80%;
     margin: auto;
+    padding: 26px;
     left: 0;
     right: 0;
     background: yellowgreen;
@@ -31,5 +32,14 @@
     }
     .alignleft{
         text-align: right;
+    }
+    button {
+        width: 140px;
+    }
+    .conteudo {
+        width: 420px;
+        margin: auto;
+        left: 0;
+        right: 0;
     }
 }

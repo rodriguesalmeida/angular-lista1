@@ -5,27 +5,33 @@
         <p>
           3. Escrever um programa para determinar o consumo médio de um automóvel  sendo  fornecida  a  distância  total  percorrida  pelo automóvel e o total de combustível gasto.
         </p>
-        <div class="linha">
-          <div class="label">
-            <label for="distancia">Informe a Distância Total</label>
-          </div>          
-          <input type="number" id="distancia" [(ngModel)]="distancia"/>
-        </div>
-        <div class="linha">
-          <div class="label">
-            <label for="gasto">Total Gasto</label>
-            </div>
-            <input type="number" id="gasto" [(ngModel)]="gasto"/>
-        </div>
-        <div class="linha">
-          <button (click)="calcular()">Calcular</button>
-        </div>
-        <div class="linha">
-          <div class="label">
-            <label for="resultado">Resultado</label>
+        <div class="conteudo">
+          <div class="linha">
+            <div class="label">
+              <label for="distancia">Informe a Distância Total</label>
+            </div>          
+            <input type="number" id="distancia" [(ngModel)]="distancia"/>
           </div>
-            <input type="number" [(ngModel)]="resultado"/>
+          <div class="linha">
+            <div class="label">
+              <label for="gasto">Total Gasto</label>
+              </div>
+              <input type="number" id="gasto" [(ngModel)]="gasto"/>
+          </div>
+          <div class="linha alignleft">
+            <div class="label"></div>
+            <button  (click)="calcular()">Calcular</button>
+          </div>
+          <div class="linha">
+            <div class="label">
+              <label for="resultado">Resultado</label>
+            </div>
+              <input type="number" [(ngModel)]="resultado"/>
+          </div>
         </div>
       </div>
   </div>
+  <app-exerc4>
+    
+  </app-exerc4>
 </div>

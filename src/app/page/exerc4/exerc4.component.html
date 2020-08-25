@@ -1,0 +1,29 @@
+<div class="page">
+    <div class="header">
+        <h1>Exercício 4:</h1>    
+        <p>
+            Escrever um programa que leia o nome de um vendedor, o seu salário  fixo  e  o  total  de  vendas  efetuadas  por  ele  no  mês  (em dinheiro).
+            Sabendo que este vendedor ganha 15% de comissão sobre suas vendas efetuadas, informar o seu nome, o salário fixo e salário no final do mês.
+        </p>
+    </div>
+    <div class="container">
+        <div class="row">
+            <label for="nome">Digite o seu Nome</label>
+            <input type="text" [(ngModel)]="nome"/>
+        </div>
+        <div class="row">
+            <label for="salario">Digite seu salário</label>
+            <input type="number" name="salario" [(ngModel)]="salario"/>
+        </div>
+        <div class="row">
+            <label for="totalVenda">Digite o total de Vendas</label>
+            <input type="number" name="totalVenda" [(ngModel)]="totalVenda">
+        </div>
+        <div class="btn">
+            <button (click)="calcular()">Calcular</button>
+        </div>
+        <div class="row" *ngIf="resultado != null">
+            {{nome}} seu sálario de {{salario | currency}} mais comissão fechou em {{ resultado | currency}}
+        </div>
+    </div>
+</div>

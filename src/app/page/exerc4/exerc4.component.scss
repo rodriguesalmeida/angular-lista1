@@ -1,0 +1,36 @@
+.page {
+    background: fuchsia;
+    padding: 16px;
+    margin: 25px;
+    border-radius: 15px;
+    border-style: groove;
+    border-width: 2px;
+    .header {
+        text-align: left;
+        margin: 8px 0px 16px 0px;
+        h1 {
+            color: indigo;
+        }
+    }
+    .container {
+        align-items: flex-end;
+        width: 500px;
+        margin: auto;
+        border-style: dashed;
+        border-radius: 5px;
+        text-align: right;
+        padding: 16px;
+    }
+    .row {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 8px;        
+        line-height: 30px;
+    }
+    input {
+        width: 150px;
+        margin-left: 16px;
+        flex: 2;
+        border: solid;
+    }
+}
