@@ -1,1 +1,35 @@
-<p>exerc6 works!</p>
+<div class="page">
+    <div class="title">
+        Exercício 6
+    </div>
+    <div class="pergunta">
+        <p>
+            Escrever  uma  programa  em  que  leia  dois  valores  para  as variáveis A e B, e efetuar as trocas dos valores de forma que a variável  A  passe  
+            a  possuir  o  valor  da  variável  B  e  a  variável  B passe  a  possuir  o  valor  da  variável  A.
+             Apresentar  os  valores trocados. Lembrando  que  temos  que  ter  3  variáveis  para  que  um  a  haja como  variável  de  armazenamento,  
+             ou  seja,  para  evitar  que  o valor  original  de  a  se  perca  é  necessário  associar  a  uma  outra variável  (denominada  usualmente  
+             de  variável  auxiliar)  tal  valor, estabelecer uma associação de a com o valor em b e, por último, associar b ao valor "salvo" na variável auxiliar.             
+        </p>
+    </div>
+    <div class="resposta">
+        <div class="row">
+            <div class="label">Valor A</div>
+            <div class="input">
+                <input [(ngModel)]="a" type="text">
+            </div>
+        </div>
+        <div class="row">
+            <div class="label">Valor B</div>
+            <div class="input">
+                <input [(ngModel)]="b" type="text">
+            </div>
+        </div>
+        <div class="alternar">
+            <button (click)="alternar()">Alternar</button>
+        </div>
+        <div class="resultado">
+            O valor de A é {{a}} <br>
+            O valor de B é {{b}}
+        </div>
+    </div>
+</div>

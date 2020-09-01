@@ -1,0 +1,28 @@
+<div class="page">
+    <div class="header">
+        <div class="title">
+            Exercício 7
+        </div>
+        <div class="pergunta">
+            Ler uma temperatura em graus Celsius e apresentá-la convertida em graus Fahrenheit. A fórmula de conversão é:  F=(9*C+160) / 5,
+            sendo F a temperatura em Fahrenheit e C a temperatura em Celsius.
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="label">
+                Celsius
+            </div>
+            <input type="number" [(ngModel)]="temperatura">
+        </div>
+        <div class="button">
+            <button (click)="calcular()">Calcular</button>
+        </div>
+        <div class="row">
+            <div class="label">
+                Fahrenheit
+            </div>
+            <input type="number" [(ngModel)]="fahrenheit">
+        </div>
+    </div>
+</div>

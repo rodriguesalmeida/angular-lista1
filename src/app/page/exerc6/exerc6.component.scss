@@ -1,0 +1,20 @@
+.page {
+    margin: 16px;
+    padding: 16px;
+    border-style: dotted;
+    border-width: 2px;
+    border-radius: 15px;
+    background-color: rgb(181, 218, 96);
+    .title {
+        text-align: center;
+        font-size: 20px;
+        font-weight: 600;
+        color: rgb(29, 64, 221);
+    }
+    .pergunta {
+        font-size: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: indigo;
+    }
+}
+
